@@ -1,0 +1,35 @@
+[
+    {
+        "id": "PT001",
+        "firstName": "ABC",
+        "lastName": "ABC",
+        "email": "abc@gmail.com",
+        "userGroup": "PARENT",
+        "address": {
+            "street1": "ABC",
+            "street2": "ABC",
+            "city": "ABC",
+            "state": "ABC",
+            "postal": "1123",
+            "country": "USA",
+            "type": "primary"
+        },
+        "phoneNumber": "(123) 123-1234",
+        "players": [
+            {
+                "id": "PL001",
+                "firstName": "ABC",
+                "lastName": "ABC",
+                "dob": "2000-10-31",
+                "freeze": false
+            },
+            {
+                "id": "PL001",
+                "firstName": "ABC",
+                "lastName": "ABC",
+                "dob": "2000-10-31",
+                "freeze": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "EMP001",
+        "firstName": "ABC",
+        "lastName": "ABC",
+        "email": "abac@gmail.com",
+        "userGroup": "TRAINER",
+        "emailNotifications": true,
+        "address": {
+            "street1": "ABC",
+            "street2": "ABC",
+            "city": "ABC",
+            "state": "ABC",
+            "postal": "1123",
+            "country": "USA"
+        },
+        "contact": {
+            "primary": {
+                "number": "(123) 123-1234",
+                "notifications": true
+            },
+            "secondary": {
+                "number": "(123) 123-1234",
+                "notifications": true
+            }
+        },
+        "profilePhotoS3Url": "s3:/abc",
+        "gender": "",
+        "description": "Lorum Ipsum",
+        "experience": "6.5",
+        "startDate": "2000-10-31",
+        "rate": 100.0,
+        "status": "ACTIVE",
+        "locations": [
+            "Ashurn",
+            "Manasa"
+        ],
+        "services": [
+            "T Pitching",
+            "Pitching"
+        ],
+        "workingHours": [
+            {
+                "day": "SUNDAY",
+                "status": "SCHEDULED",
+                "availabilities": [
+                    {
+                        "startTime": "01:30:00",
+                        "endTime": "01:30:00",
+                        "location": "Ashburn"
+                    },
+                    {
+                        "startTime": "01:30:00",
+                        "endTime": "01:30:00",
+                        "location": "Ashburn"
+                    }
+                ]
+            },
+            {
+                "day": "MONDAY",
+                "status": "UNSCHEDULED",
+                "availabilities": []
+            }
+        ]
+    }
+]

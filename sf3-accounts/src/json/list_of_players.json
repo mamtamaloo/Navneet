@@ -1,0 +1,20 @@
+[
+    {
+        "id": "PL001",
+        "customerId": "PT001",
+        "firstName": "ABC",
+        "lastName": "ABC",
+        "userGroup": "PLAYER",
+        "dob": "2000-10-31",
+        "freeze": false
+    },
+    {
+        "id": "PL001",
+        "customerId": "PT001",
+        "firstName": "ABC",
+        "lastName": "XYZ",
+        "userGroup": "PLAYER",
+        "dob": "2000-10-31",
+        "freeze": false
+    }
+]

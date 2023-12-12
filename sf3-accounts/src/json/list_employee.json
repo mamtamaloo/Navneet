@@ -1,0 +1,40 @@
+{
+    "employees": [
+        {
+            "id": "EMP001",
+            "firstName": "ABC",
+            "lastName": "ABC",
+            "email": "abac@gmail.com",
+            "address": {
+                "street1": "ABC",
+                "street2": "ABC",
+                "city": "ABC",
+                "state": "ABC",
+                "postal": "1123",
+                "country": "USA",
+                "type": "primary"
+            },
+            "primaryContactNumber": "(123) 123-1234",
+            "creationDate": "2000-10-31",
+            "status": "ACTIVE"
+        },
+        {
+            "id": "EMP001",
+            "firstName": "ABC",
+            "lastName": "ABC",
+            "email": "abacd@gmail.com",
+            "address": {
+                "street1": "ABC",
+                "street2": "ABC",
+                "city": "ABC",
+                "state": "ABC",
+                "postal": "1123",
+                "country": "USA",
+                "type": "primary"
+            },
+            "primaryContactNumber": "(123) 123-1234",
+            "creationDate": "2000-10-31",
+            "status": "ACTIVE"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+exclude: '.git|.tox'
+default_stages: [commit]
+fail_fast: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: debug-statements
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: pretty-format-json
+        args: ['--no-sort-keys', '--autofix', '--indent=4']
+      - id: check-added-large-files
+      - id: debug-statements
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [ "--profile", "black", "--filter-files" ]
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        language_version: python3.9
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-bugbear]
+        args: [--ignore, 'B008,B010,W503,E501,E731,W504,E203', --exclude, '.git, deployments', --per-file-ignores, '__init__.py:F401']
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.21.2
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./../.
+      dockerfile: ./deployments/Dockerfile
+    volumes:
+      - .:/code
+    ports:
+      - "9001:9001"
+    env_file:
+      - .env
+    environment:
+      - mysql_root_password=${mysql_root_password}
+      - database_driver=${database_driver}
+      - database_username=${database_username}
+      - database_password=${database_password}
+      - database_host=host.docker.internal
+      - database_port=3306
+      - database_name=${database_name}
+      - workers=4
